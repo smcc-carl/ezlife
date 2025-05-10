@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/ez-logo.png">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ne60cIgFkrnRTaa7DwBMh",
+      });
+   })();
+</script>
+</head>
+<body class="bg-indigo-50 text-gray-700">
+    {% include "header.njk" %}
+    <main>
+        {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+  
+</body>
+</html>

@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-yellow-100: oklch(97.3% 0.071 103.193);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-indigo-50: oklch(96.2% 0.018 272.314);
     --color-indigo-100: oklch(93% 0.034 272.788);
@@ -306,11 +307,26 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-18 {
+    width: calc(var(--spacing) * 18);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
+  }
+  .w-116 {
+    width: calc(var(--spacing) * 116);
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
@@ -440,20 +456,20 @@
   .border-gray-800 {
     border-color: var(--color-gray-800);
   }
+  .border-yellow-100 {
+    border-color: var(--color-yellow-100);
+  }
   .bg-\[\#222\] {
     background-color: #222;
-  }
-  .bg-black {
-    background-color: var(--color-black);
-  }
-  .bg-blue-700 {
-    background-color: var(--color-blue-700);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
   .bg-gray-700 {
     background-color: var(--color-gray-700);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
   }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
@@ -479,29 +495,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/1 {
-    background-color: color-mix(in srgb, #fff 1%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 1%, transparent);
-    }
-  }
-  .bg-white\/5 {
-    background-color: color-mix(in srgb, #fff 5%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
-    }
-  }
-  .bg-white\/10 {
-    background-color: color-mix(in srgb, #fff 10%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-    }
-  }
   .bg-white\/70 {
     background-color: color-mix(in srgb, #fff 70%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
     }
+  }
+  .bg-yellow-100 {
+    background-color: var(--color-yellow-100);
   }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom;
@@ -779,10 +780,10 @@
       }
     }
   }
-  .hover\:px-6 {
+  .hover\:text-gray-800 {
     &:hover {
       @media (hover: hover) {
-        padding-inline: calc(var(--spacing) * 6);
+        color: var(--color-gray-800);
       }
     }
   }

@@ -6,37 +6,43 @@
     <title>Elim8: Make Your Business Easier with Automation</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" type="image/x-icon" href="/img/elim8-logo.png">
+
     <meta name="description" content="Make your business easier with Elim8! Our website automation simplifies operations, cuts busywork & helps you grow effortlessly. Unlock powerful tools & scale faster.">
     <meta name="keywords" content="Make your Business Easier,Smarter automation, made simple for businesses that mean business, Automate Everything, Grow Effortlessly, all-in-one automation system, automation">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Elim8 Automation">
 
-    <meta property="og:title" content="Elim8: Make Your Business Easier with Automation"> 
+    <meta property="og:title" content="Elim8: Make Your Business Easier with Automation">
     <meta property="og:description" content="Make your business easier with Elim8! Our website automation simplifies operations, cuts busywork & helps you grow effortlessly. Unlock powerful tools & scale faster.">
     <meta property="og:image" content="https://www.yourwebsite.com/img/ez-logo.png"> 
     <meta property="og:url" content="https://www.yourwebsite.com/"> 
     <meta property="og:type" content="website">
 
-    <meta name="twitter:card" content="summary_large_image"> 
-    <meta name="twitter:title" content="Elim8: Make Your Business Easier with Automation"> 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elim8: Make Your Business Easier with Automation">
     <meta name="twitter:description" content="Make your business easier with Elim8! Our website automation simplifies operations, cuts busywork & helps you grow effortlessly. Unlock powerful tools & scale faster.">
-    <meta name="twitter:image" content="https://www.yourwebsite.com/img/ez-logo.png"> 
+    <meta name="twitter:image" content="https://www.elim8.online/img/elim8-logo.png"> 
     
     
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE4FYSNNR1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YE4FYSNNR1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YE4FYSNNR1');
+    </script>
 
-  gtag('config', 'G-YE4FYSNNR1');
-</script>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    <script type="module">
+       
+    </script>
 </head>
 <body class="bg-indigo-50 text-gray-700">
     <nav class="px-[10%] z-10 py-4 flex justify-between border backdrop-blur-3xl border-gray-100 items-center text-gray-800 bg-white/70 sticky top-0 shadow">
     <a href="/" class="flex items-center">
-        <img src="img/ez-logo.png" alt="elim8 logo" class="w-18 rounded-full">
+        <img src="img/elim8-logo.png" alt="elim8 logo" class="w-18 rounded-full">
         <h1 class="text-5xl font-extrabold">ELIMATE</h1>
     </a>
     <ul class="flex gap-10 ">
@@ -647,6 +653,42 @@ document.addEventListener('DOMContentLoaded', () => {
         <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
     </div>
 </footer>
-  
+ 
+    <div id="n8n-chat"></div>
+
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            // Correct webhookUrl from your head script
+            webhookUrl: 'https://elim8-automation.onrender.com/webhook/642c1591-d3a4-4232-bae7-c2feb0842382/chat',
+            // The rest of your detailed configuration
+            webhookConfig: {
+                method: 'POST',
+                headers: {} // Add any necessary custom headers here
+            },
+            target: '#n8n-chat', // This is where the chat will be injected
+            mode: 'window',    // 'window' for a floating chat, 'inline' to embed directly
+            chatInputKey: 'chatInput',
+            chatSessionKey: 'sessionId',
+            metadata: {}, // Any initial metadata to send with the first message
+            showWelcomeScreen: false, // Set to true if you want a welcome screen before chat starts
+            defaultLanguage: 'en',
+            initialMessages: [
+                'Hi there! 👋',
+                'My name is Eli. How can I assist you today with Elim8.online?' // Updated name
+            ],
+            i18n: {
+                en: {
+                    title: 'Chat with Elim8.online 👋', // Updated title
+                    subtitle: "We're here to help you 24/7.",
+                    footer: '', // Optional footer text
+                    getStarted: 'New Conversation',
+                    inputPlaceholder: 'Type your question about automation...', // Updated placeholder
+                },
+            },
+            // Add other configurations as needed based on @n8n/chat documentation
+        });
+    </script>
 </body>
 </html>

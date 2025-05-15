@@ -1,42 +1,15 @@
-<nav class="px-[5%] z-10 py-4 flex justify-between items-center border backdrop-blur-3xl border-gray-100 text-gray-800 bg-white/70 sticky top-0 shadow">
-  <!-- Logo -->
-  <a href="/" class="flex items-center gap-2">
-    <img src="../img/elim8-logo.png" alt="elim8 logo" class="w-12 rounded-full">
-    <h1 class="text-3xl sm:text-4xl font-extrabold">ELIMATE</h1>
-  </a>
-
-  <!-- Hamburger Menu (Mobile) -->
-  <button id="menu-toggle" class="md:hidden focus:outline-none">
-    <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16" />
-    </svg>
-  </button>
-
-  <!-- Navigation Links -->
-  <ul id="nav-menu"
-      class="hidden md:flex flex-col md:flex-row gap-6 md:gap-10 absolute md:static bg-white/90 md:bg-transparent top-20 left-0 w-full md:w-auto px-5 md:px-0 py-4 md:py-0 shadow md:shadow-none rounded-b-xl md:rounded-none backdrop-blur-lg md:backdrop-blur-none text-center">
-    <li><a href="/" class="block p-4 bg-violet-700 text-white border-b border-gray-100">Home</a></li>
-    <li><a href="#features" class="block p-4 bg-violet-700 text-white border-b border-gray-100">Features</a></li>
-    <li><a href="#why-us" class="block p-4 bg-violet-700 text-white border-b border-gray-100">Why us</a></li>
-    <li><a href="#why-automate" class="block p-4 bg-violet-700 text-white border-b border-gray-100">Why Automate</a></li>
-    <li><a href="#services" class="block p-4 bg-violet-700 text-white border-b border-gray-100">Services</a></li>
-    <li><a href="#about-us" class="block p-4 bg-violet-700 text-white border-b border-gray-100">About us</a></li>
-    <li class="md:hidden mt-4">
-      <button class="bg-violet-700 open-popup text-white px-8 py-2 rounded-3xl w-full text-center">Get Started</button>
-    </li>
-  </ul>
-
-  <!-- CTA Button (Desktop Only) -->
-  <button class="hidden md:inline-block bg-violet-700 open-popup text-white px-8 py-2 rounded-3xl">Get Started</button>
+<nav class="px-[10%] z-10 py-4 flex justify-between border backdrop-blur-3xl border-gray-100 items-center text-gray-800 bg-white/70 sticky top-0 shadow">
+    <a href="/" class="flex items-center">
+        <img src="img/elim8-logo.webp" alt="elim8 logo" class="w-12 gap-2 rounded-full">
+        <h1 class="text-4xl font-extrabold">ELIMATE</h1>
+    </a>
+    <ul class="flex gap-10 ">
+        <li><a href="/">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#why-us">Why us</a></li>
+        <li><a href="#why-automate">Why Automate</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About us</a></li>
+    </ul>
+    <button class="bg-violet-700 open-popup text-white px-8 py-2 rounded-3xl">Get Started</a>
 </nav>
-
-<!-- Add JS just before </body> -->
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("nav-menu");
-
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>

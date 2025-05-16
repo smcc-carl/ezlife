@@ -111,7 +111,8 @@
 
     <script type="module">
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
+       
+        
         createChat({
             // Correct webhookUrl from your head script
             webhookUrl: 'https://elim8-automation.onrender.com/webhook/642c1591-d3a4-4232-bae7-c2feb0842382/chat',
@@ -128,13 +129,12 @@
             showWelcomeScreen: false, // Set to true if you want a welcome screen before chat starts
             defaultLanguage: 'en',
             initialMessages: [
-                'Hi there! 👋',
-                'My name is Eli. How can I assist you today with Elim8.online?' // Updated name
+                 // Updated name
             ],
             i18n: {
                 en: {
-                    title: 'Chat with Elim8.online 👋', // Updated title
-                    subtitle: "We're here to help you 24/7.",
+                    title: 'Hi I am Tiki. Your 24/7 chatbot Assistant', // Updated title
+                    subtitle: "I am not just a chatbot. You can also book appointment here.",
                     footer: '', // Optional footer text
                     getStarted: 'New Conversation',
                     inputPlaceholder: 'Type your question about automation...', // Updated placeholder

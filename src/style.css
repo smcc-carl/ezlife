@@ -7,6 +7,10 @@
     --font-body: "Prompt", "sans-serif";   /* Optional: if you want a specific 'body' utility */
 }
 
-#n8n-chat{
-    
+:root {
+	--chat--color-primary: #7e21ff;
+    --chat--toggle--background: var(--chat--color-primary);
+}
+.chat-window-toggle{
+    background-color: var(--chat--color-primary);
 }

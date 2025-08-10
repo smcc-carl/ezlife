@@ -45,16 +45,33 @@
         <img src="img/elimate-logo.png" alt="elim8 logo" class="w-48 gap-2 rounded-full">
      
     </a>
-    <ul class="flex gap-10 ">
-   
+    <ul class="hidden md:flex gap-10">
         <li class="hover:font-semibold transition duration-700"><a href="#features">Features</a></li>
         <li class="hover:font-semibold transition duration-700"><a href="#why-us">Why us</a></li>
         <li class="hover:font-semibold transition duration-700"><a href="#why-automate">Why Automate</a></li>
         <li class="hover:font-semibold transition duration-700"><a href="#services">Services</a></li>
         <li class="hover:font-semibold transition duration-700"><a href="#about-us">About us</a></li>
     </ul>
-    <button class=" open-popup text-black px-8 py-2 border-1 hover:bg-black hover:text-white transition duration-500">Get Started</a>
+    <button class="hidden md:block open-popup text-black px-8 py-2 border-1 hover:bg-black hover:text-white transition duration-500">Get Started</button>
+    <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
 </nav>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <a href="#features" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Features</a>
+    <a href="#why-us" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Why us</a>
+    <a href="#why-automate" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Why Automate</a>
+    <a href="#services" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Services</a>
+    <a href="#about-us" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">About us</a>
+    <div class="px-4 py-2">
+        <button class="w-full open-popup bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700">Get Started</button>
+    </div>
+</div>
+
   <main>
     
  <section class="py-12 px-[20%]">
@@ -166,6 +183,18 @@
           console.warn("ConvertKit custom button (#custom-kit-button) not found on this page.");
         }
       });
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
     });
   </script>
 </body>

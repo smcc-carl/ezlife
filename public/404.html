@@ -40,7 +40,7 @@
 </head>
 
 <body class="text-black">
-  <nav class="px-[10%] z-10 py-4 flex justify-between border backdrop-blur-3xl border-gray-100 items-center text-gray-800 bg-white sticky top-0 shadow">
+  <nav class="px-[10%] z-10 py-4 flex justify-between border backdrop-blur-3xl border-gray-100 items-center text-gray-800 bg-white/30 sticky top-0 shadow">
     <a href="/" class="flex items-center">
         <img src="img/elimate-logo.png" alt="elim8 logo" class="w-48 gap-2 rounded-full">
      
@@ -92,9 +92,6 @@
   <div id="n8n-chat"></div>
 
   
-  <script async data-uid="f7c7d7878e" src="https://elim8.kit.com/f7c7d7878e/index.js"></script>
-
-  
   <script type="module">
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
@@ -124,35 +121,11 @@
     });
   </script>
 
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function onConvertKitReady(callback) {
-        const interval = setInterval(() => {
-          if (window.ConvertKit && window.ConvertKit.UI && typeof window.ConvertKit.UI.showForm === "function") {
-            clearInterval(interval);
-            callback();
-          }
-        }, 100);
-      }
-
-      onConvertKitReady(() => {
-        const btn = document.getElementById("custom-kit-button");
-        if (btn) {
-          btn.addEventListener("click", function () {
-            window.ConvertKit.UI.showForm("f7c7d7878e");
-          });
-        } else {
-          console.warn("ConvertKit custom button (#custom-kit-button) not found on this page.");
-        }
-      });
-    });
-  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      // Mobile menu toggle
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
-
       if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', function () {
           mobileMenu.classList.toggle('hidden');
@@ -161,4 +134,3 @@
     });
   </script>
 </body>
-</html>

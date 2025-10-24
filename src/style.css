@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Raleway", "sans-serif"; /* Overrides Tailwind's default sans-serif */
-    --font-display: "Raleway", "sans-serif"; /* Optional: if you want a specific 'display' utility */
-    --font-body: "Raleway", "sans-serif";   /* Optional: if you want a specific 'body' utility */
+    --font-sans: "Lato", sans-serif;
+    --font-display: "Sansation", sans-serif;
+    --font-body: "Lato", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Sansation", sans-serif;
+}
+
+body, button {
+    font-family: "Lato", sans-serif;
 }
 
 :root {

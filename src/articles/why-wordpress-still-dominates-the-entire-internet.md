@@ -1,5 +1,4 @@
 ---
-permalink: /articles/wordpress-dominates
 tags: articles
 desc: Discover why WordPress still powers over 40% of all websites online — and why its flexibility, cost-efficiency, and simplicity make it the web’s undefeated champion.
 title: WHY WORDPRESS STILL DOMINATES THE ENTIRE INTERNET

@@ -1,9 +1,9 @@
 ---
-link: https://www.elimate.online/articles/ai-vs-web-developer
+link: https://elimate.online/articles/ai-vs-web-developer
 tags: articles
 desc: Will AI replace web developers in the future? Discover why the answer is no—and how developers can use AI to become even more powerful.
 title: WILL AI REPLACE WEB DEVELOPERS IN THE FUTURE?
-image: /assets/ai-vs-webdev.webp
+image: /img/ai-vs-dev.webp
 ---
 
 For years, people have been asking the same question: **“Will AI replace web developers?”**  
@@ -13,7 +13,7 @@ But here’s the truth: **AI won’t replace web developers—it will redefine w
 
 <br>
 
-## The Difference Between Building and Understanding
+# The Difference Between Building and Understanding
 
 AI can generate code, but it doesn’t understand *context*. It can’t fully grasp *why* a user prefers a certain layout, or how a small color change can impact trust and conversion. Web development isn’t just about code; it’s about **understanding people**—their behaviors, emotions, and decision-making.
 

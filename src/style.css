@@ -29,3 +29,29 @@ body, button {
 .accordion details[open] summary .plus-icon {
   transform: rotate(45deg);
 }
+
+.logo-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo-carousel-track {
+  display: inline-block;
+  animation: scroll-left 30s linear infinite; /* Adjust duration as needed */
+}
+
+.logo-carousel-track img {
+  height: 50px; /* Adjust logo height as needed */
+  margin: 0 20px; /* Adjust spacing between logos */
+  display: inline-block;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

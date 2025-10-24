@@ -1,10 +1,20 @@
-module.exports = function(eleventyConfig) {
-  // Set input and output directories
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItTocDoneRight = require("markdown-it-toc-done-right");
 
-
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/img");
 
+  // Use Markdown-It for rendering
+  const markdownLib = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  })
+  .use(markdownItAnchor, { permalink: false })
+  .use(markdownItTocDoneRight);
 
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     dir: {
@@ -12,9 +22,8 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       output: "public"
     },
-    templateFormats: ["njk", "md", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk"
   };
-}
+};

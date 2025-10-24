@@ -1,15 +1,13 @@
 ---
 layout: base.njk
 ---
-<section class="px-[20%]">
-  <div class="container ">
-   <h1 class="pt-10 text-center text-slate-800 text-5xl font-black pb-16 pt-16">{{ title }}</h1>
-      <img class="mb-6 rounded-xl mx-auto" src="{{ image }}" alt="{{ img-alt }} ">
-     
-  </div>
+<section class="px-4 md:px-[10%] lg:px-[20%]">
+    <div class="container mx-auto">
+        <h1 class="pt-10 text-center text-slate-800 text-4xl md:text-5xl font-black pb-8 md:pb-16 pt-16">{{ title }}</h1>
+        <img class="mb-6 rounded-xl mx-auto w-full max-w-3xl" src="{{ image }}" alt="{{ img-alt }}">
+    </div>
 
-  <div class="text-gray-700 leading-loose  pb-16">
-      {{ content | safe }}
-  </div>
+    <div class="text-gray-700 leading-loose pb-16 text-base md:text-lg">
+        {{ content | safe }}
+    </div>
 </section>
-

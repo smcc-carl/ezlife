@@ -1,5 +1,5 @@
 ---
-link: https://elimate.online/articles/ai-vs-web-developer
+link: https://elim8.online/articles/ai-vs-web-developer
 tags: articles
 desc: Will AI replace web developers in the future? Discover why the answer is no—and how developers can use AI to become even more powerful.
 title: WILL AI REPLACE WEB DEVELOPERS IN THE FUTURE?

@@ -21,3 +21,11 @@ body, button {
 .chat-window-toggle{
     background-color: var(--chat--color-primary);
 }
+
+.accordion details summary .plus-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion details[open] summary .plus-icon {
+  transform: rotate(45deg);
+}
